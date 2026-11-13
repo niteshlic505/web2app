@@ -1,0 +1,6 @@
+{
+  "name": "Website2App Studio",
+  "description": "AI-powered Website to Android Application Builder with APK/AAB export, live preview, and customization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

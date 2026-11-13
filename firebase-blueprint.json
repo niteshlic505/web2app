@@ -1,0 +1,41 @@
+{
+  "$schema": "https://raw.githubusercontent.com/firebase/firebase-tools/master/schema/firestore-blueprint.json",
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "documentId": "{userId}",
+      "description": "Authenticated user profile and device telemetry",
+      "fields": {
+        "userId": { "type": "string", "required": true },
+        "email": { "type": "string", "required": false },
+        "displayName": { "type": "string", "required": false },
+        "phoneNumber": { "type": "string", "required": false },
+        "currentDevice": { "type": "string", "required": false },
+        "deviceType": { "type": "string", "required": false },
+        "plan": { "type": "string", "required": true },
+        "createdAt": { "type": "timestamp", "required": true },
+        "lastLoginAt": { "type": "timestamp", "required": true }
+      }
+    },
+    "CloudProject": {
+      "collection": "users/{userId}/projects",
+      "documentId": "{projectId}",
+      "description": "User created website conversion projects synced to cloud",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "userId": { "type": "string", "required": true },
+        "name": { "type": "string", "required": true },
+        "url": { "type": "string", "required": true },
+        "packageName": { "type": "string", "required": true },
+        "versionCode": { "type": "number", "required": true },
+        "versionName": { "type": "string", "required": true },
+        "conversionMode": { "type": "string", "required": true },
+        "targetDeviceProfile": { "type": "string", "required": true },
+        "primaryColorHex": { "type": "string", "required": true },
+        "navStyle": { "type": "string", "required": true },
+        "createdAt": { "type": "timestamp", "required": true },
+        "updatedAt": { "type": "timestamp", "required": true }
+      }
+    }
+  }
+}

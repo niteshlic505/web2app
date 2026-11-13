@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Website2App Studio</string>
+    <string name="play_billing_title">Google Play Official Billing</string>
+    <string name="play_billing_purchase_cta">Pay via Google Play</string>
+    <string name="play_billing_restore_cta">Restore Play Purchases</string>
+    <string name="play_billing_manage_cta">Manage in Play Store</string>
+</resources>
